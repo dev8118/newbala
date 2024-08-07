@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مديرية بلدية الكوت - محافظة واسط</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        direction: 'rtl'
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+        background-color: #f2f7fa;
+      }
+      .header {
+        padding: 1rem 1rem 0rem;
+        text-align: center;
+      }
+      .content {
+        padding: 1rem;
+      }
+      .divider {
+        border-color: #fff;
+      }
+      .footer {
+        padding: 1rem;
+        text-align: center;
+      }
+      .footer-content {
+        max-width: 450px;
+        margin: auto;
+      }
+      .mb-1 {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="{{ logoUrl }}" alt="logo" height="100" />
+      </header>
+      <secton class="content">
+        <h2 class="mb-1">السلام عليكم</h2>
+        <p class="mb-1">عزيزي المرسل {{ name }}</p>
+        <p class="mb-1">{{ content }}</p>
+        <p>شكرا لتواصلكم</p>
+        <p class="mb-1">قسم الدعم></p> 
+        <p>مديرية بلدية الكوت</p>
+        <p>محافظة واسط</p>
+        <p>جمهورية العراق</p>
+      </section>
+      <hr class="divider" />
+      <footer class="footer">
+        <div class="footer-content">
+          <img src="{{ logoUrl }}" alt="logo" height="50" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
